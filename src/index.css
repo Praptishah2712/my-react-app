@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8ad9ec46, #5c6bc0);
+}
+
+#root {
+  width: 100%;
+  padding: 1rem;
+}
+
+.Login-Container {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.seprator {
+  text-align: center;
+  position: relative;
+  margin: 1.5rem 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.seprator span {
+  background: #fff;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.seprator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  z-index: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.input-wrapper i {
+  font-size: 1.4rem;
+  margin-right: 0.75rem;
+  color: #5c6bc0;
+}
+
+.input-fields {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+.login-button {
+  padding: 0.75rem;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color:white;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.signup a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
